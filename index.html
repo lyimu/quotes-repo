@@ -3,10 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doofer's Quotes Cha</title>
+  <title>Doofer's Quotes</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #7289da;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .quote-description {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+    .quote-buttons {
+      margin-top: 20px;
+    }
+    .notice {
+      margin-top: 30px;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
   <h1>Quotes JSON Data</h1>
-  <p>This site hosts a quotes JSON file.</p>
+  <p class="quote-description">This site hosts a JSON file.<br>
+    It is intended to be used for an ESP32 with a display.</p>
+
+  <div class="quote-buttons">
+    <a href="https://doofersespquoutes.netlify.app/quotes.json" target="_blank"><button>View JSON</button></a>
+    <a href="https://github.com/lyimu/quotes-repo" target="_blank"><button>View Repository</button></a>
+  </div>
+
+  <div class="notice">
+    <p>Heads-up: All the quotes here are intentionally taken out of context, and all quotes are meant to be taken as sarcasm.</p>
+  </div>
+
 </body>
 </html>
